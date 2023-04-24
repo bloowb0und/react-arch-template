@@ -1,11 +1,5 @@
-import {MainPageContainer} from "@/pages/MainPage/MainPage.Styles.js";
+import { MainPageContainer } from "./MainPage.Styles.js";
 
-const MainPage = () => {
-	return (
-		<MainPageContainer>
-            Main page content
-		</MainPageContainer>
-	);
-};
-
-export default MainPage;
+export default function MainPage() {
+  return <MainPageContainer>Main page content</MainPageContainer>;
+}

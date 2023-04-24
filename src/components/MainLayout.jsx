@@ -1,13 +1,11 @@
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
-import LoginRequired from "@/components/LoginRequired.jsx";
+import LoginRequired from "@src/components/LoginRequired.jsx";
 
-const MainLayout = () => {
-	return (
-		<LoginRequired>
-            <Outlet />
-		</LoginRequired>
-	);
-};
-
-export default MainLayout;
+export default function MainLayout() {
+  return (
+    <LoginRequired>
+      <Outlet />
+    </LoginRequired>
+  );
+}

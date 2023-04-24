@@ -1,19 +1,19 @@
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import "@/assets/styles/resetStyles.css";
-import "@/assets/styles/global.css";
+import "@src/assets/styles/resetStyles.css";
+import "@src/assets/styles/global.css";
 
-import MainLayout from "@/components/MainLayout.jsx";
-import MainPage from "@/pages/MainPage";
+import MainLayout from "@src/components/MainLayout.jsx";
+import MainPage from "@src/pages/MainPage/MainPage.jsx";
 
 function App() {
-	return (
-		<Routes>
-			<Route path="/" element={<MainLayout />}>
-				<Route path="/" element={<MainPage />} />
-			</Route>
-		</Routes>
-	)
+  return (
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route path="/" element={<MainPage />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
